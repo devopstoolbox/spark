@@ -8,10 +8,10 @@ spark: Spark
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.spark](https://galaxy.ansible.com/devops-toolbox.spark)
+[https://galaxy.ansible.com/devopstoolbox.spark](https://galaxy.ansible.com/devopstoolbox.spark)
 
 ```bash
-ansible-galaxy install devops-toolbox.spark
+ansible-galaxy install devopstoolbox.spark
 ```
 
 Requirements
@@ -60,7 +60,7 @@ Example Playbook
   tasks:
     - name: spark is configured
       import_role:
-        name: devops-toolbox.spark
+        name: devopstoolbox.spark
       vars:
         spark_packages_state: present
         spark_remove_packages: true
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
