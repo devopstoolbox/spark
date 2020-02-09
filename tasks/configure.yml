@@ -1,0 +1,11 @@
+---
+# Configure spark
+
+- name: service is enabled and started
+  service:
+    name: "{{ item }}"
+    enabled: true
+    state: started
+  become: true
+  loop: "{{ spark_services_enable }}"
+  when: spark_enable_service

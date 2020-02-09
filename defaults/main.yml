@@ -1,0 +1,19 @@
+---
+# defaults file for spark
+
+spark_packages_state: present
+spark_remove_packages: true
+spark_enable_service: true
+spark_enable_selinux: true
+spark_copy_templates: true
+spark_firewall_configure: true
+spark_firewall_rules:
+  - service: ssh
+  - port: 3389
+spark_users:
+  - user: devops
+    group: docker
+spark_selinux_booleans:
+  - name: ftp_home_dir
+    state: true
+    persistent: true
